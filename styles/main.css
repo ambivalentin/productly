@@ -4,7 +4,23 @@
     --orange: #FF9900;
     --brack: #2F281E;
     --brown: #544837;
+    --poppins-regular;
+    --poppins-semibold;
+
 }
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
 
 body {
     font-family: 'Poppins';
@@ -12,15 +28,11 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 20px;
+    margin: 1% 20% 0 -4%;
 }
 
-section {
-    display: flex;
-    margin-left: 145px;
-}
 
-.nav__header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -41,6 +53,12 @@ section {
     display: flex;
     justify-content: space-between;
     font-family: "Poppins", serif;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #2F281E;
+    list-style: none;
     
 }
 
@@ -48,7 +66,7 @@ a {
     text-decoration: none;
     color: var(--brack); 
 } 
-
+/*
 ul {
     font-weight: 400;
     font-style: normal;
@@ -56,7 +74,7 @@ ul {
     color: #2F281E;
     list-style: none;
 }
-
+ */
 
 .nav__sign {
     display: flex;
@@ -83,22 +101,27 @@ border: 1px solid --edge
     background: var(--orange);
     border: none;
     color: var(--white);
+
+    
 } 
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16%;
+}
+.box-one {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 16%;
+}
 
 .intro {
     display: flex;
     flex-direction: column;
     max-width: 518px;
-}
-
-.jumping {
-    display: flex;
-}
-.box-one {
-    display: flex;
-    flex-direction: row;
-    max-width: 1126px;
-
+    max-height: fit-content;
 }
 
 
@@ -112,20 +135,14 @@ h1 {
 }
 
 p {
-    font-style: normal;
-    font: 18px;
+    font-family: var(--poppins-regular);
     color: var(--brown);
 }
 
-.intro-buttons {
-    display: flex;
-    flex-direction: row;
-    width: 366px;
-    height: auto;
 
-}
 
 .get_started {
+   
     width: 175px;
     height: 53px;
     border-radius: 5px;
@@ -135,9 +152,17 @@ p {
 
 }
 
-.watch {
+.watch-play {
+    text-align: center;
     width: 175px;
     height: 53px;
     border: none;
-    background-color: var(--white);
+    background: #FFFFFF;
+    var(--poppins-semibold);
+}
+
+.jumping{
+    display: flex;
+    max-width: 100%;
+    
 }
