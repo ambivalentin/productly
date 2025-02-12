@@ -17,8 +17,9 @@ body {
 
 section {
     display: flex;
-    margin-left:145px;
+    margin-left: 145px;
 }
+
 .nav__header {
     display: flex;
     flex-direction: row;
@@ -40,20 +41,20 @@ section {
     display: flex;
     justify-content: space-between;
     font-family: "Poppins", serif;
+    
 }
 
 a {
     text-decoration: none;
-    color: var(--brack);
+    color: var(--brack); 
+} 
 
-}
 ul {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     color: #2F281E;
     list-style: none;
-    text-align: center;
 }
 
 
@@ -114,4 +115,29 @@ p {
     font-style: normal;
     font: 18px;
     color: var(--brown);
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 366px;
+    height: auto;
+
+}
+
+.get_started {
+    width: 175px;
+    height: 53px;
+    border-radius: 5px;
+    background: var(--orange);
+    border: none;
+    color: var(--white);
+
+}
+
+.watch {
+    width: 175px;
+    height: 53px;
+    border: none;
+    background-color: var(--white);
 }
